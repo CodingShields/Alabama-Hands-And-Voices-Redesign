@@ -1,6 +1,8 @@
-import Header from "../components/Header";
-import hvLogoPng2x from "../assets/images/hv_logo-png_2x.png";
-import signKid from "../assets/images/sign-kid.jpg";
+import hvLogoPng2x from "../assets/images/home-page-images/hv_logo-png_2x.png";
+import signKid from "../assets/images/home-page-images/sign-kid.jpg";
+import lawson from "../assets/images/home-page-images/lawson.jpg";
+import family from "../assets/images/home-page-images/family.jpg";
+
 const HomePage = () => {
 	return (
 		<div>
@@ -35,7 +37,7 @@ const HomePage = () => {
 									<div class='aspect-w-12 aspect-h-7 lg:aspect-none'>
 										<img
 											class='rounded-lg object-cover object-center shadow-lg'
-											src='./assets/images/family.jpg'
+											src={family}
 											alt='Family holding hands with child'
 											width='1184'
 											height='1376'
@@ -206,7 +208,7 @@ const HomePage = () => {
 									</defs>
 									<rect width='784' height='404' fill='url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)' />
 								</svg>
-								<img class='relative mx-auto h-96 w-96 object-cover' width='490' src='./assets/images/lawson.jpg' alt='' />
+								<img class='relative mx-auto h-96 w-96 object-cover' width='490' src={lawson} alt='' />
 							</div>
 						</div>
 					</div>
@@ -256,6 +258,21 @@ const HomePage = () => {
 									</defs>
 									<rect width='404' height='384' fill='url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)' />
 								</svg>
+							</div>
+							<div class='relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0'>
+								<h2 class='text-3xl font-extrabold text-hvorange' id='join-heading'>
+									Support Our Mission
+								</h2>
+								<p class='text-lg text-white'>
+									If you would like to donate to provide operational funds for Alabama Hands & Voices, Inc, we are an Alabama non-profit corporation
+									with 501(c)(3) status.
+								</p>
+								<a
+									class='block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto'
+									href='#'
+								>
+									Donate Here!
+								</a>
 							</div>
 						</div>
 					</div>
